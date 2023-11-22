@@ -1,0 +1,494 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	/* color: white; */
+	color: black;
+/*	vertical-align: baseline;
+	 background: transparent; */
+
+}
+
+iframe {
+	width: 100%;
+  height: 100vh;
+	/*overflow: hidden;*/
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset for HTML 5 Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* tells browsers that don't read html 5 tags to render like divs */
+footer, aside, article, section {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+/* clears containers with floated elements, no need for extra markup! */
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Type
+----------------------------------------------------------------------------------------------------*/
+
+html {
+	font-size: 16px;
+}
+
+/* url("../images/logo.png");body {
+	color: #333;
+	font: 75%/1.5em Tahoma, Arial, sans-serif;
+} DOES NOT WORK */
+
+h1, h2, h3, h4, h5, h6 {
+	color: #4c2b00;
+	font: 1.9em/1em Tahoma, Arial, sans-serif;
+}
+
+h2 {
+	color: #4c2b00;
+}
+
+h3 {
+	color: #4c2b00;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 1.35em;
+    color: #4c2b00;
+}
+
+h5 {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+h6 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+p {
+	color: #4c2b00;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: justify;
+}
+
+ul {
+	list-style: disc;
+	color: #4c2b00;
+	font-size: 1.0em;
+	font-weight: normal;
+	line-height: 1.3em;
+}
+
+ol, ol.lowerRoman, ol.upperAlpha {
+	list-style: decimal;
+	color: #4c2b00;
+	font-size: 1.0em;
+	font-weight: normal;
+	line-height: 1.3em;
+}
+
+ol.lowerRoman {
+	list-style: lower-roman;
+}
+
+ol.upperAlpha {
+	list-style: upper-alpha;
+}
+
+strong, b, .b {
+	color: #4c2b00 !important;
+	font-weight: bold;
+}
+
+a {
+	color: #999;
+	text-decoration: none;
+}
+
+/*a:link {
+	color: #FFFFFF;
+	outline: none;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #FFFFFF;
+	outline: none;
+	text-decoration: none;
+}*/
+
+a:hover {
+	color: #4f5e66;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #FFF;
+	outline: none;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: 1px dotted;
+}
+
+.more {
+	text-decoration: underline !important;
+}
+
+/* Spacing
+----------------------------------------------------------------------------------------------------*/
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	padding-bottom: 3px !important;
+}
+
+hr {
+	border: 0 #ccc solid;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+}
+
+p {
+	margin-right: 10px;
+	padding: 5px 0;
+}
+
+blockquote {
+	margin-right: 10px;
+	padding: 5px 0 20px 0;
+}
+
+ul, ol {
+	margin-left: 25px;
+	padding-left: 0;
+}
+
+li {
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset {
+	margin-bottom: 10px;
+}
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+html {
+    /* background: url(../images/background.png) repeat; */
+    background-color: none;
+	text-align: center;
+}
+
+body {
+	background:  beige;
+	margin-bottom: 0px;
+	width: 100%;
+	/* max-width: 860px; */
+	margin: 0 auto;
+	border: none;
+}
+
+.div_suephoto {
+	text-align: left;
+	background-color: white;
+}
+
+.div_suephoto img {
+	height: 150px; 
+	border-radius: 10px;
+	/* attempt to fade photo does not work
+	box-shadow: -40px -41px -51px rgba(34,34,34,0.9); 
+	background: linear-gradient(to bottom, rgb(246, 239, 239), rgba(194, 186, 186, 0)); */
+}
+
+header {
+	width: 100%;
+	border: none;
+	background-color: none;
+    /* background-image: url(../images/background.png); */
+    /*background-size: contain;*/
+		align-items: right;
+    /* overflow: hidden; */
+    height: 100%;
+    margin-top: 0px;
+		position: sticky;
+		top: 0px;
+		z-index: 99999;
+}
+
+#content
+{
+		position:relative; left: 0; right: 0; bottom: 0; top: 0px; 
+}
+
+header h1 {
+	color: #FFF;
+	font-size: 1.6em;
+	text-align: center;
+	border: none;
+}
+
+header h1 span {
+	color: #FFF;
+	float: right;
+	padding-right: 5px;
+    padding-top:0px;
+	width: 31.25%; /* 300/960 */
+	border: none;
+}
+
+#headTxt {
+	color: #FFF !important;
+	font-size: 4em;
+	line-height: 0.3em;
+	text-transform: capitalize;
+	width: auto !important;
+}
+
+nav ul {
+	background: #006652;
+    list-style: none;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	border: none;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 8px 0px 5px 0px;
+	border-right: 4px solid #eee;
+}
+
+nav ul li a {
+	color: #FFFFFF;
+	font-size: 1.5em;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	padding: 0px 16px 0px 12px; /*12/960*/
+	text-transform: uppercase;
+	border: none;
+}
+
+nav ul li:last-child
+{
+	border: none;
+}
+
+nav ul li a:hover {
+	color: #d5e1e5;
+	text-decoration: none;
+}
+
+nav ul li a.selected {
+		color: #e2dfcf;
+       
+}
+
+nav ul li a.selected:hover {
+	color: #e2dfcf;
+    
+}
+
+section center {
+   margin: 0 10px;
+    
+}
+
+#mainRight, #mainRight2 {
+
+  margin-top: 0px;
+	width: 100%;
+	text-align: left;
+}
+
+.columns {
+	margin: 0;
+	border: none;
+    background-color: none;
+    display: block;
+    width: 100%;
+    padding: 0px 0px 50px 0px;
+}
+
+.colLeft {
+	float: left;
+	width: 45%; /*430/960*/
+	border: none;
+	background-color: none;
+  margin: 20px 0px 20px 3.125%; /* 30/960 */
+}
+
+.colRight {
+	float: right;
+	width: 45%; /* 450/960 */
+	border-style: solid;
+    border-left: 2px; 
+		background-color: red;
+    padding-left: 4%; /*20/960*/
+    margin: 20px 0px 20px 1.041666666667%; /* 10/960 */
+}
+
+
+.DELETEcolright2 {
+	float: right;
+	width: 41.666666666667%; /* 400/960 */
+    border-left: 2px; 
+    padding-left: 2.083333333333%; /*20/960*/
+    margin: 20px 0px 20px 1.041666666667%; /* 10/960 */
+}
+
+
+.col_wide {
+	float: left;
+	width: 65.625%; /* 630/960 */
+	border: none;
+    margin: 30px 0px 20px 1.041666666667%; /* 10/960 */
+}
+
+.col_thin {
+	float: right;
+	width: 28.645833333333%; /* 275/960 */
+    border-left: 0.208333333333%; /* 2/960 */
+    border-color: rgba(186,186,186,0.3);
+    border-style: groove;
+    padding-left: 2.083333333333%; /* 20/960 */
+    margin: 30px 1.041666666667% 20px 1.041666666667%; /* 10/960 */
+}
+
+
+#signature {
+	margin-bottom: 5px;
+    margin-right: 10px;
+	text-align: right;
+}
+
+footer {
+	clear: both;
+	padding-top: 10px;
+    height:11px;
+	border: none;
+}
+
+footer p {
+    float:left;
+    margin-left: 3.125%; /* 30/960 */
+    margin-top: 15px;
+ 	font-size: 0.8em;
+    color: #4f5e66;
+	border: none;
+}
+
+footer ul {
+	float: right;
+	list-style: none;
+	width: 34.375%; /* 330/960 */
+	padding-top: 2px;
+	text-align: right;
+    margin-right: 2.083333333333%; /* 20/960 */
+	border: none;
+}
+
+footer ul li {
+	display: inline;
+	margin: 0 5px;
+	border: none;
+}
+
+footer ul li a {
+	font-size: 0.9em;
+    color: #FFFFFF;
+}
+
+footer ul li a:hover {
+	color: #FFF;
+}
+
+
+@media screen and (max-width: 590px)
+{
+	nav ul {
+		padding:10px 0;
+	}
+	nav ul li {
+		border: none;
+		display: block;
+		width:100%;
+		padding: 5px inherit;
+	}
+	
+	.colLeft, .colRight, .colright2 {
+		float: none;
+		width: auto;
+	    padding: 2.083333333333%; /*20/960*/
+	    margin: inherit 0;
+
+	}
+}
