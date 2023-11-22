@@ -20,7 +20,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 iframe {
-	width: 100%;
+	width: 90%;
   height: 100vh;
 	/*overflow: hidden;*/
 }
