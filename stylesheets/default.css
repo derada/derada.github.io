@@ -391,7 +391,7 @@ section center {
 	width: 45%; /* 450/960 */
 	border-style: solid;
     border-left: 2px; 
-		background-color: red;
+		background-color: none;
     padding-left: 4%; /*20/960*/
     margin: 20px 0px 20px 1.041666666667%; /* 10/960 */
 }
